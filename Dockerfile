@@ -11,7 +11,7 @@ COPY . .
 RUN ./docker/build/install-task.sh
 RUN TAGS="cert pam" task build
 
-FROM alpine:3.17
+FROM alpine:3.21.2
 RUN apk --no-cache --no-progress add \
   bash \
   ca-certificates \
